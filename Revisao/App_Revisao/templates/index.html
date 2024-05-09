@@ -25,12 +25,20 @@
     <tr>
         <td>Nome:</td>
         <td>Idade:</td>
+        <td>Ações:</td>
     </tr>
     {% for i in dados %}
     <tr>
         <td>{{i.nome}}</td>
         <td>{{i.idade}}</td>
+        <td>
+          <a href="{% url 'editar_cadastro' i.id %}" style="background-color: #451db1; color: #fff; padding: 4px 8px; border-radius: 4px; text-decoration: none;">Editar Idade</a>
+
+          <a href="{% url 'excluir_pessoa' i.id %}" style="background-color: #8261db; color: #fff; padding: 4px 8px; border-radius: 4px; text-decoration: none;">Excluir</a>
+
+        </td>
     </tr>
+    
     {% endfor %}
   </table>
 

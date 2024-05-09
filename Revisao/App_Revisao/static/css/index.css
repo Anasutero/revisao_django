@@ -44,13 +44,13 @@ button {
 }
 
 button {
-    background-color: #160e88;
+    background-color: #531080;
     color: white;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #7891e4;
+    background-color: #a97ee2;
 }
 
 /* Estilo para a tabela */
